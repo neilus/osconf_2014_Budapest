@@ -5,12 +5,14 @@ Ezt a néhány slide-ot a 2014-es, Budapesten a Grund-ban szervezett OpenSource 
 
 Mivel én egy lusta dög vagyok, aki szereti az Emacs-ot és utálja az office programokat nem LibreOffice Impressben készítettem a slide-okat, hanem inkább a [reveal.js](https://github.com/hakimel/reveal.js) népszerű prezentációs HTML5/JavaScript frameworkhöz készült emacs plugint az [org-reveal](https://github.com/yjwen/org-reveal)-t választottam.
 
-Mi kell ahhoz, hogy csak simán lejátszam és lássam a speaker's note-okat is?
-============================================================================
+A diák, speaker's deck-el együtt megtekinthetőek [ide](http://neilus.icss.hu/osconf_2014_Budapest/) kattintva.
 
-1. installálj [node.js](http://nodejs.org/)-t
-2. Git-el vagy zip arhív formájában szedd le a gh-pages branchet
-TODO:
-- instrukciók a szerkesztéshez
-	- offline prezentációhoz
-- speaker's notes-ot átnézni
+Szerkesztéshez
+===============
+
+Előfeltétel:
+- GIT (a frissítéshez, opcionális)
+- webserver (statikus webszerver kell kiszolgálja a fájlokat, ahhoz h lásd prezi közben a speaker's notes-ot)
+Az [én .emacs](https://github.com/neilus/dotfiles/blob/master/.emacs) fájlom.
+
+Bármi óhaj-sóhajjal írj mailt & nyiss egy issue-t itt githubon!
