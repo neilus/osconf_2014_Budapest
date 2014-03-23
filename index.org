@@ -1,0 +1,89 @@
+#+Title: Inter Computer & OpenSource
+#+Author: Sana Norbert
+#+email: neilus@icss.hu
+#+Language: hu
+#+Options: toc:nil
+
+* Rendszerüzemeltetés
+- Operációs rendszer
+- Virtualizáció
+- Szoftver platform/Köztes réteg
+
+#+begin_notes
+- A legtöbb munkaállomásunk, de sok munkatársunk otthoni/privát gépét vagy laptopját is *linux* hajtja
+- A mai világban bármelyik cég életképtelenné válna virtualizáció nélkül.
+ Nálunk először ez csak a saját tesztkörnyezetekben vetette meg a lábát (érthető okokból, virtuális gépeken kísérleteztünk), ekkor még mindenki az általa leginkább kedvelt szoftvert használta. Mostanra viszont már éles szervereinket is virtualizáljuk, így az erősebb gépre egy-egy teszt/fejlesztői gép is elfét.
+#+end_notes
+
+** Virtualizáció?
+Azért olyan jó OpenSource Virtualizációs megoldásban gondolkodni, mert van miből válogatni
+#+ATTR_REVEAL: :frag roll-in
+- OpenVZ
+- KVM
+- KQemu és QEMU
+- Hercules
+
+#+begin_notes
+/nyomj *space*-t hogy bejöjjenek az alpontok!/
+- OpenVZ környezetet nagy előszeretettel használunk szerverek virtualizálására
+- KVM és KQemu-val bármikor tudunk installálni akár nem linuxos tesztkörnyezetet is
+- Qemu-t és Hercules-t használunk minden nem x86 tesztkörnyezethez, amiken megintcsak Linux fut :)
+#+end_notes
+
+** Szoftver platform/Köztes réteg
+Operációs rendszertől kezdve a teljes megoldásokig...
+
+#+begin_notes
+Az a jó az OpenSource-ban, hogy minden problémára nyújt megoldást
+- NFS, SAMBA, CUPS, Webszerver
+- DNS, VPN, router
+#+end_notes
+
+* Felhasználói szoftverek
+#+ATTR_REVEAL: :frag grow
+- (Libre/Open) Office szoftvercsomag
+- IDE
+- Adatelemzés/Vizualizáció
+
+#+begin_notes
+/nyomj *space*-t hogy "animálódjanak" az alpontok!/
+- Fejlesztői környezetként nagy előszeretettel használunk Vim és Emacs mellett még Eclipse-et és Cloud 9-t
+- Adatok elemzéséhez, adatvizualizációhoz is nyílt szoftvercsomagokat részesítünk előnyben, mivel
+	- könnyű hozzájutni, amikor szükség van rá
+	- jól dokumentált, sok forrás van ami könnyíti a kezdeti tanulást
+	- segítőkész, szakértői közösség van mögöttük
+#+end_notes
+
+* Szoftverfejlesztés
+
+- Programozási nyelvek (compilerek és interpreterek)
+	- GNU C, C++,...
+	- Java VM
+	- Regina REXX, python, php, node.js
+- Framework/Library
+	- PHP Zend
+	- Spring
+	- Angular.js, d3.js, three.js
+
+#+begin_notes
+
+A manapság legnépszerűbb keretrendszerek szinte minden területen és technológiában nyílt forráskóduak. Mivel a legtöbbjük ingyenesen is hozzáférhető. Mindez és a kezdő, új felhasználók gyors tanulási menetét segítő *jó* minőségű dokumentációk, HOWTO-k, blogok és IRC-közösségek segítenek munkánkban, hogy meg tudjunk felelni a velünk szemben támasztott elvárásoknak.
+#+end_notes
+
+* Miért OpenSource?
+#+ATTR_REVEAL: :frag grow
+- Nincs 1 size fits all
+- Segítőkész, szakértői közösség
+- Divatos
+
+#+begin_notes
+/nyomj *space*-t hogy "animálódjanak" az alpontok!/
+1. Manapság senkinek nem elég az amit egy "dobozos" szoftver önmagában nyújt. Mindenkinek szüksége van arra, hogy egy újonnan beszerzett szoftverkomponens *be tudjon épülni* a vállalati szoftverek /heterogén/ környezetébe, egy /koherens/, robosztus rendszert alkhotva
+
+2. Minden kezdet nehéz, de a legtöbb OpenSource megoldás mögött nemcsak egy-egy jó szakértőkből álló, segítőkész hobby-csapat áll. A népszerű, sokak által használt OpenSource termékek mögött általában áll egy vagy több cég is: 
+pl: Az Apache foudnation több termékére is lehet támogatást vásárolni az IBM-től, VMware-től is
+
+3. Egyre divatosabb egy terméket megosztani az egész világgal, nemcsak magányos farkasoök, de vállalatok esetében is. Így ha egy projekt sokakna khasznos, akkor egyrészt sokan beszállnak a projekt fejlesztésébe *(lásd a Linux kernelt!)*, de nem kizárt hogy így nagyvállalatok is felkarolják a projekt jeles fejlesztőit, ezzel pénzt fektetve a projek jövőjébe.
+#+end_notes
+
+* Vége

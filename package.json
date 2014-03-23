@@ -1,0 +1,23 @@
+{
+  "name": "osconf_2014_Budapest",
+  "version": "1.0.0",
+  "description": "Slides about the relationship of the company Inter Computer and OpenSource",
+  "main": "index.html",
+  "scripts": {
+    "test": "static"
+  },
+  "repository": "",
+  "keywords": [
+    "org",
+    "reveal",
+    "presentation",
+    "OSconf_2014_Budapest",
+    "IC"
+  ],
+  "author": "Norbert Sana",
+  "license": "BSD",
+  "dependencies": {
+    "reveal.js": "~2.6.2",
+    "static": "~2.0.0"
+  }
+}
