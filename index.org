@@ -3,7 +3,7 @@
 #+email: neilus@icss.hu
 #+Language: hu
 #+Options: toc:nil
-
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/2.5.0/
 * Rendszerüzemeltetés
 - Operációs rendszer
 - Virtualizáció
