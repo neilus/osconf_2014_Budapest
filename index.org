@@ -1,4 +1,4 @@
-#+Title: Inter Computer & OpenSource
+#+Title: Inter-Computer & OpenSource
 #+Author: Sana Norbert
 #+email: neilus@icss.hu
 #+Language: hu
