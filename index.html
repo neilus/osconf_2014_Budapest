@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8"/>
+<title>(Inter Computer & OpenSource)</title>
+<meta name="author" content="(Sana Norbert)"/>
+<link rel="stylesheet" href="./reveal.js/css/reveal.min.css"/>
+<link rel="stylesheet" href="./reveal.js/css/theme/default.css" id="theme"/>
+
+<link rel="stylesheet" href="./reveal.js/css/print/pdf.css" type="text/css" media="print"/>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section>
+<h1>Inter Computer &amp; OpenSource</h1>
+<h2>Sana Norbert</h2>
+<h2><a href="mailto:neilus@icss.hu">neilus@icss.hu</a></h2>
+<h2></h2></section>
+
+<section>
+<section id="sec-1" >
+
+<h2><span class="section-number-2">1</span> Rendszerüzemeltetés</h2>
+<ul class="org-ul">
+<li>Operációs rendszer
+</li>
+<li>Virtualizáció
+</li>
+<li>Szoftver platform/Köztes réteg
+</li>
+</ul>
+
+<aside class="notes">
+<ul class="org-ul">
+<li>A legtöbb munkaállomásunk, de sok munkatársunk otthoni/privát gépét vagy laptopját is <b>linux</b> hajtja
+</li>
+<li>A mai világban bármelyik cég életképtelenné válna virtualizáció nélkül.
+Nálunk először ez csak a saját tesztkörnyezetekben vetette meg a lábát (érthető okokból, virtuális gépeken kísérleteztünk), ekkor még mindenki az általa leginkább kedvelt szoftvert használta. Mostanra viszont már éles szervereinket is virtualizáljuk, így az erősebb gépre egy-egy teszt/fejlesztői gép is elfét.
+</li>
+</ul>
+</aside>
+
+</section>
+<section id="sec-1-1" >
+
+<h3><span class="section-number-3">1.1</span> Virtualizáció?</h3>
+<p>
+Azért olyan jó OpenSource Virtualizációs megoldásban gondolkodni, mert van miből válogatni
+</p>
+<ul class="org-ul">
+<li class="fragment roll-in">OpenVZ
+</li>
+<li class="fragment roll-in">KVM
+</li>
+<li class="fragment roll-in">KQemu és QEMU
+</li>
+<li class="fragment roll-in">Hercules
+</li>
+</ul>
+
+<aside class="notes">
+<p>
+<i>nyomj <b>space</b>-t hogy bejöjjenek az alpontok!</i>
+</p>
+<ul class="org-ul">
+<li>OpenVZ környezetet nagy előszeretettel használunk szerverek virtualizálására
+</li>
+<li>KVM és KQemu-val bármikor tudunk installálni akár nem linuxos tesztkörnyezetet is
+</li>
+<li>Qemu-t és Hercules-t használunk minden nem x86 tesztkörnyezethez, amiken megintcsak Linux fut :)
+</li>
+</ul>
+</aside>
+</section>
+<section id="sec-1-2" >
+
+<h3><span class="section-number-3">1.2</span> Szoftver platform/Köztes réteg</h3>
+<p>
+Operációs rendszertől kezdve a teljes megoldásokig&#x2026;
+</p>
+
+<aside class="notes">
+<p>
+Az a jó az OpenSource-ban, hogy minden problémára nyújt megoldást
+</p>
+<ul class="org-ul">
+<li>NFS, SAMBA, CUPS, Webszerver
+</li>
+<li>DNS, VPN, router
+</li>
+</ul>
+</aside>
+</section>
+</section>
+<section>
+<section id="sec-2" >
+
+<h2><span class="section-number-2">2</span> Felhasználói szoftverek</h2>
+<ul class="org-ul">
+<li class="fragment grow">(Libre/Open) Office szoftvercsomag
+</li>
+<li class="fragment grow">IDE
+</li>
+<li class="fragment grow">Adatelemzés/Vizualizáció
+</li>
+</ul>
+
+<aside class="notes">
+<p>
+<i>nyomj <b>space</b>-t hogy "animálódjanak" az alpontok!</i>
+</p>
+<ul class="org-ul">
+<li>Fejlesztői környezetként nagy előszeretettel használunk Vim és Emacs mellett még Eclipse-et és Cloud 9-t
+</li>
+<li>Adatok elemzéséhez, adatvizualizációhoz is nyílt szoftvercsomagokat részesítünk előnyben, mivel
+<ul class="org-ul">
+<li>könnyű hozzájutni, amikor szükség van rá
+</li>
+<li>jól dokumentált, sok forrás van ami könnyíti a kezdeti tanulást
+</li>
+<li>segítőkész, szakértői közösség van mögöttük
+</li>
+</ul>
+</li>
+</ul>
+</aside>
+</section>
+</section>
+<section>
+<section id="sec-3" >
+
+<h2><span class="section-number-2">3</span> Szoftverfejlesztés</h2>
+<ul class="org-ul">
+<li>Programozási nyelvek (compilerek és interpreterek)
+<ul class="org-ul">
+<li>GNU C, C++,&#x2026;
+</li>
+<li>Java VM
+</li>
+<li>Regina REXX, python, php, node.js
+</li>
+</ul>
+</li>
+<li>Framework/Library
+<ul class="org-ul">
+<li>PHP Zend
+</li>
+<li>Spring
+</li>
+<li>Angular.js, d3.js, three.js
+</li>
+</ul>
+</li>
+</ul>
+
+<aside class="notes">
+<p>
+A manapság legnépszerűbb keretrendszerek szinte minden területen és technológiában nyílt forráskóduak. Mivel a legtöbbjük ingyenesen is hozzáférhető. Mindez és a kezdő, új felhasználók gyors tanulási menetét segítő <b>jó</b> minőségű dokumentációk, HOWTO-k, blogok és IRC-közösségek segítenek munkánkban, hogy meg tudjunk felelni a velünk szemben támasztott elvárásoknak.
+</p>
+</aside>
+</section>
+</section>
+<section>
+<section id="sec-4" >
+
+<h2><span class="section-number-2">4</span> Miért OpenSource?</h2>
+<ul class="org-ul">
+<li class="fragment grow">Nincs 1 size fits all
+</li>
+<li class="fragment grow">Segítőkész, szakértői közösség
+</li>
+<li class="fragment grow">Divatos
+</li>
+</ul>
+
+<aside class="notes">
+<p>
+<i>nyomj <b>space</b>-t hogy "animálódjanak" az alpontok!</i>
+</p>
+<ol class="org-ol">
+<li>Manapság senkinek nem elég az amit egy "dobozos" szoftver önmagában nyújt. Mindenkinek szüksége van arra, hogy egy újonnan beszerzett szoftverkomponens <b>be tudjon épülni</b> a vállalati szoftverek <i>heterogén</i> környezetébe, egy <i>koherens</i>, robosztus rendszert alkhotva
+</li>
+
+<li>Minden kezdet nehéz, de a legtöbb OpenSource megoldás mögött nemcsak egy-egy jó szakértőkből álló, segítőkész hobby-csapat áll. A népszerű, sokak által használt OpenSource termékek mögött általában áll egy vagy több cég is: 
+</li>
+</ol>
+<p>
+pl: Az Apache foudnation több termékére is lehet támogatást vásárolni az IBM-től, VMware-től is
+</p>
+
+<ol class="org-ol">
+<li>Egyre divatosabb egy terméket megosztani az egész világgal, nemcsak magányos farkasoök, de vállalatok esetében is. Így ha egy projekt sokakna khasznos, akkor egyrészt sokan beszállnak a projekt fejlesztésébe <b>(lásd a Linux kernelt!)</b>, de nem kizárt hogy így nagyvállalatok is felkarolják a projekt jeles fejlesztőit, ezzel pénzt fektetve a projek jövőjébe.
+</li>
+</ol>
+</aside>
+</section>
+</section>
+<section>
+<section id="sec-5" >
+
+<h2><span class="section-number-2">5</span> Vége</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="./reveal.js/lib/js/head.min.js"></script>
+<script src="./reveal.js/js/reveal.min.js"></script>
+<script>
+
+        		// Full list of configuration options available here:
+        		// https://github.com/hakimel/reveal.js#configuration
+        		Reveal.initialize({
+        			controls: true,
+        			progress: true,
+        			history: false,
+        			center: true,
+        			rollingLinks: false,
+        			keyboard: true,
+        			overview: true,
+        			 // slide width
+        			 // slide height
+        			 // slide margin
+        			 // slide minimum scaling factor
+        			 // slide maximum scaling factor
+
+
+        			theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        			transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+        			transitionSpeed: 'default',
+
+        			// Optional libraries used to extend on reveal.js
+        			dependencies: [
+        				{ src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } }
+        				,{ src: './reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
+        				,{ src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
+        				,{ src: './reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        				,{ src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
+        				,{ src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        				// { src: './reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+        				// { src: './reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+         				
+        			]
+        		});
+</script>
+</body>
+</html>
